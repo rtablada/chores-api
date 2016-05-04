@@ -1,0 +1,36 @@
+{
+  "name": "reward",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "avatar": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "points": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "purchase": {
+      "type": "belongsTo",
+      "model": "purchase",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

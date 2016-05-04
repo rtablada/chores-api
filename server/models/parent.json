@@ -1,0 +1,27 @@
+{
+  "name": "parent",
+  "base": "user",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "avatar": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "children": {
+      "type": "hasMany",
+      "model": "child",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

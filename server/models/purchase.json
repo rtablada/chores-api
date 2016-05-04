@@ -1,0 +1,37 @@
+{
+  "name": "purchase",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "points": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "reward": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "rewards": {
+      "type": "hasMany",
+      "model": "reward",
+      "foreignKey": ""
+    },
+    "child": {
+      "type": "belongsTo",
+      "model": "child",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

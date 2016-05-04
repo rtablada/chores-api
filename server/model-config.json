@@ -43,7 +43,27 @@
     "dataSource": "db",
     "public": true
   },
-  "post": {
+  "parent": {
+    "dataSource": "db",
+    "public": true
+  },
+  "child": {
+    "dataSource": "db",
+    "public": true
+  },
+  "reward": {
+    "dataSource": "db",
+    "public": true
+  },
+  "chore": {
+    "dataSource": "db",
+    "public": true
+  },
+  "purchase": {
+    "dataSource": "db",
+    "public": true
+  },
+  "assignment": {
     "dataSource": "db",
     "public": true
   },

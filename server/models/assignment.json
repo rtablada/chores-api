@@ -1,0 +1,46 @@
+{
+  "name": "assignment",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "chores": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "point-value": {
+      "type": "number",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "checkbox": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "chore": {
+      "type": "hasMany",
+      "model": "chore",
+      "foreignKey": ""
+    },
+    "child": {
+      "type": "belongsTo",
+      "model": "child",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

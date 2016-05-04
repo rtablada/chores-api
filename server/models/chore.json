@@ -1,0 +1,43 @@
+{
+  "name": "chore",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "points": {
+      "type": "number",
+      "required": true
+    },
+    "date": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "child": {
+      "type": "belongsTo",
+      "model": "child",
+      "foreignKey": ""
+    },
+    "assignment": {
+      "type": "belongsTo",
+      "model": "assignment",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

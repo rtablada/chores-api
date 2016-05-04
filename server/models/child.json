@@ -1,0 +1,45 @@
+{
+  "name": "child",
+  "base": "user",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "avatar": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "point-total": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "parent": {
+      "type": "belongsTo",
+      "model": "parent",
+      "foreignKey": ""
+    },
+    "assignments": {
+      "type": "hasMany",
+      "model": "assignment",
+      "foreignKey": ""
+    },
+    "purchases": {
+      "type": "hasMany",
+      "model": "purchase",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
