@@ -6,6 +6,24 @@
         "methods": [
           "login"
         ]
+      },
+      {
+        "model": "parent",
+        "methods": [
+          "login"
+        ]
+      },
+      {
+        "model": "user",
+        "methods": [
+          "login"
+        ]
+      },
+      {
+        "model": "child",
+        "methods": [
+          "login"
+        ]
       }
     ]
   },
