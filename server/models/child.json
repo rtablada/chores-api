@@ -19,7 +19,7 @@
     },
     "point-total": {
       "type": "number",
-      "required": true
+      "default": "0"
     }
   },
   "validations": [],
